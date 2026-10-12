@@ -1,3 +1,4 @@
+
 package todo_backend.controller;
 
 import org.springframework.web.bind.annotation.*;
@@ -7,7 +8,10 @@ import todo_backend.service.TodoService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://todo-project-bhuvanadharang-5980.vercel.app"
+})
 @RequestMapping("/api/todos")
 public class TodoController {
 
